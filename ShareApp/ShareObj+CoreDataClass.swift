@@ -9,6 +9,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 @objc(ShareObj)
 public class ShareObj: NSManagedObject {

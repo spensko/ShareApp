@@ -7,9 +7,18 @@
 //
 
 import Foundation
+import CoreData
 
 class ViewModel {
     
-    let items: [String] = ["1", "2", "3"]
+    var items: [ShareObj] = []
+    
+    init() {
+        updateItems()
+    }
+    
+    func updateItems() {
+        items = CoreDataManager.shared.shareObjects
+    }
     
 }

@@ -17,7 +17,7 @@ extension ShareObj {
         return NSFetchRequest<ShareObj>(entityName: "ShareObj")
     }
 
-    @NSManaged public var thimbnail: Data?
+    @NSManaged public var thumbnail: Data?
     @NSManaged public var name: String?
     @NSManaged public var info: String?
     @NSManaged public var url: String?
